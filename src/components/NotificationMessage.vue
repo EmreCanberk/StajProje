@@ -10,7 +10,7 @@ export default {
     message: String,
     type: {
       type: String,
-      default: 'success', // 'success' veya 'error'
+      default: 'success', 
     }
   }
 };

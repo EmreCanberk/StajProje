@@ -42,9 +42,8 @@
 <script>
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
-import { app } from '@/firebaseConfig'; // <-- Hatanın düzeltildiği yer
-// Dosya adınız firebaseConfig.js olduğu için @/firebaseConfig olarak değiştirdik.
-// Eğer dosyanızın yolu src/firebase/config.js ise @/firebase/config olarak kalmalı.
+import { app } from '@/firebaseConfig'; 
+
 
 const db = getFirestore(app);
 
@@ -53,15 +52,15 @@ export default {
   data() {
     return {
       isLoggedIn: false,
-      userRole: '', // Kullanıcı rolünü saklayacağız
+      userRole: '', 
     };
   },
   computed: {
-    // Butonun linkini dinamik olarak ayarla
+    
     complaintLink() {
       return this.userRole === 'admin' ? '/admin' : '/complaints';
     },
-    // Butonun metnini dinamik olarak ayarla
+   
     buttonText() {
       return this.userRole === 'admin' ? 'Yönetim Sayfasına Git' : 'Şikayetleri Görüntüle';
     },
@@ -71,17 +70,17 @@ export default {
     onAuthStateChanged(auth, async (user) => {
       this.isLoggedIn = !!user;
       if (user) {
-        // Kullanıcı giriş yaptıysa, rolünü sorgula
+       
         const userRef = doc(db, 'users', user.uid);
         const docSnap = await getDoc(userRef);
         if (docSnap.exists()) {
           this.userRole = docSnap.data().role;
         } else {
-          // Kullanıcı kaydı bulunamazsa varsayılan rolü 'user' olarak ayarla
+         
           this.userRole = 'user';
         }
       } else {
-        // Kullanıcı çıkış yaptıysa
+
         this.userRole = '';
       }
     });
@@ -99,7 +98,7 @@ export default {
 </script>
 
 <style scoped>
-/* Stiller öncekiyle aynı, değişiklik yok */
+
 .home-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;

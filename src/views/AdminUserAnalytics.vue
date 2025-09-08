@@ -41,20 +41,20 @@
 <script>
 import { db } from '../firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
-import UserComplaintDetailsModal from '../components/UserComplaintDetailsModal.vue'; // <-- YENİ EKLENDİ
+import UserComplaintDetailsModal from '../components/UserComplaintDetailsModal.vue'; 
 
 export default {
   name: 'AdminUserAnalytics',
   components: {
-    UserComplaintDetailsModal // <-- YENİ EKLENDİ
+    UserComplaintDetailsModal 
   },
   data() {
     return {
       users: [],
       loading: true,
-      isModalVisible: false, // <-- YENİ EKLENDİ
-      selectedUserId: null,  // <-- YENİ EKLENDİ
-      selectedUserEmail: '', // <-- YENİ EKLENDİ
+      isModalVisible: false, 
+      selectedUserId: null,  
+      selectedUserEmail: '', 
     };
   },
   computed: {
@@ -94,7 +94,7 @@ export default {
         this.loading = false;
       }
     },
-    // Yeni eklenen metot
+    
     showDetails(userId, userEmail) {
       this.selectedUserId = userId;
       this.selectedUserEmail = userEmail;

@@ -22,7 +22,7 @@
   import { doc, setDoc } from 'firebase/firestore';
 
   export default {
-    name: 'UserRegister', // Linter uyarıları için 'UserRegister' olarak değiştirildi
+    name: 'UserRegister', 
     data() {
       return {
         email: '',
@@ -35,14 +35,14 @@
           const userCredential = await createUserWithEmailAndPassword(auth, this.email, this.password);
           const user = userCredential.user;
 
-          // Kullanıcı Firestore'a varsayılan 'user' rolüyle kaydet
+          
           await setDoc(doc(db, 'users', user.uid), {
             email: user.email,
             role: 'user'
           });
 
           alert('Kayıt başarılı! Şimdi giriş yapabilirsiniz.');
-          this.$router.push('/'); // Giriş sayfasına yönlendir
+          this.$router.push('/'); 
         } catch (error) {
           console.error('Kayıt olurken hata oluştu:', error.message);
           alert('Kayıt olurken hata oluştu: ' + error.message);

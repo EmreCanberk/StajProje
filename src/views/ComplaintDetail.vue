@@ -113,7 +113,7 @@ export default {
           status: this.selectedStatus
         });
         alert("Şikayet durumu başarıyla güncellendi.");
-        this.complaint.status = this.selectedStatus; // Arayüzü anında güncelle
+        this.complaint.status = this.selectedStatus; 
       } catch (error) {
         console.error("Güncelleme sırasında hata oluştu:", error);
         alert("Güncelleme sırasında bir hata oluştu: " + error.message);

@@ -62,9 +62,7 @@ export default {
 </script>
 
 <style scoped>
-/* Font Awesome için public/index.html dosyasına ekleyin:
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-*/
+
 .contact-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -150,14 +148,14 @@ export default {
 .social-link span {
   font-weight: bold;
 }
-.social-link:nth-child(1) { background-color: #1DA1F2; } /* Twitter */
-.social-link:nth-child(2) { background-color: #E1306C; } /* Instagram */
-.social-link:nth-child(3) { background-color: #1877F2; } /* Facebook */
-.social-link:nth-child(4) { background-color: #25D366; } /* WhatsApp */
+.social-link:nth-child(1) { background-color: #1DA1F2; } 
+.social-link:nth-child(2) { background-color: #E1306C; } 
+.social-link:nth-child(3) { background-color: #1877F2; } 
+.social-link:nth-child(4) { background-color: #25D366; } 
 
 .map-container {
   overflow: hidden;
-  padding-top: 75%; /* Daha uzun harita için */
+  padding-top: 75%; 
   position: relative;
   height: 0;
   border-radius: 10px;

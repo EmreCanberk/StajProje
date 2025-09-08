@@ -210,7 +210,7 @@ export default {
 </script>
 
 <style scoped>
-/* Mevcut stil kodlarınız */
+
 .profile-container {
   max-width: 600px;
   margin: 30px auto;

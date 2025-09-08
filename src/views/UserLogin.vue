@@ -71,7 +71,7 @@ export default {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  text-align: center; /* Merkezi hizalama eklendi */
+  text-align: center; 
 }
 h2 {
     color: #333;
@@ -107,7 +107,7 @@ button {
 button:hover {
   background-color: #369c6d;
 }
-/* Mevcut stillere ek olarak yeni stiller */
+
 p {
   margin-top: 20px;
   color: #555;
@@ -123,7 +123,7 @@ p a:hover {
   font-size: 0.9em;
   color: #888;
   float: right;
-  margin-top: -10px; /* Üstteki elemana daha yakın olması için */
+  margin-top: -10px;
 }
 .forgot-password a:hover {
   color: #444;

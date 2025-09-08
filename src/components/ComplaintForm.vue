@@ -68,7 +68,7 @@ export default {
     return {
       message: '',
       category: '',
-      priority: 'düşük', // Varsayılan öncelik belirlendi
+      priority: 'düşük',
       techDetails: '',
       selectedFile: null,
       fileName: '',
@@ -128,7 +128,7 @@ export default {
           userName: user.displayName || 'Anonim',
           message: this.message,
           category: this.category,
-          priority: this.priority, // YENİ: Öncelik seviyesi eklendi
+          priority: this.priority,
           techDetails: this.techDetails || null,
           imageUrl: imageUrl,
           status: 'beklemede',
@@ -136,7 +136,7 @@ export default {
         });
 
         this.successMessage = 'Şikayetiniz başarıyla gönderildi!';
-        // Formu temizle
+        
         this.message = '';
         this.category = '';
         this.priority = 'düşük';

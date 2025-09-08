@@ -198,7 +198,7 @@ export default {
         d.setDate(d.getDate() - i);
         const dateStr = d.toISOString().split('T')[0];
         complaintCounts[dateStr] = 0;
-        dateLabels.push(d.toLocaleDateString()); // Tarih formatını daha okunur hale getirme
+        dateLabels.push(d.toLocaleDateString()); 
       }
 
       complaintsLast7Days.forEach(c => {
@@ -213,7 +213,7 @@ export default {
         }
       });
       
-      // complaintCounts objesini dateLabels'a göre sıralama
+     
       const sortedChartData = dateLabels.map(date => complaintCounts[date] || 0);
 
       const ctx = document.getElementById('complaintChart');
@@ -307,7 +307,7 @@ export default {
 </script>
 
 <style scoped>
-/* Mevcut stiller */
+
 .list-container {
   max-width: 800px;
   margin: 30px auto;
@@ -469,7 +469,7 @@ h3 {
 .kutu.inceleniyor { background-color: #3498db; }
 .kutu.cozuldu { background-color: #2ecc71; }
 
-/* Yeni Stil: Grafik */
+
 .chart-container {
   max-width: 760px;
   margin: 0 auto;

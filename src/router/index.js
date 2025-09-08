@@ -12,7 +12,7 @@ import AdminUserList from '../views/AdminUserList.vue';
 import UserProfile from '../views/UserProfile.vue';
 import AdminUserAnalytics from '../views/AdminUserAnalytics.vue';
 import ForgotPassword from '../views/ForgotPassword.vue';
-import ComplaintDetail from '../views/ComplaintDetail.vue'; // Yeni sayfa eklendi
+import ComplaintDetail from '../views/ComplaintDetail.vue'; 
 import { auth, db } from '../firebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
 
@@ -44,7 +44,7 @@ const routes = [
     component: AdminUserList,
     meta: { requiresAuth: true, requiresRole: 'admin' }
   },
-  { // YENİ EKLENEN ROTA
+  { 
     path: '/admin/complaint/:id',
     name: 'ComplaintDetail',
     component: ComplaintDetail,

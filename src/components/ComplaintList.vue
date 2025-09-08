@@ -112,14 +112,14 @@ export default {
       selectedComplaint: null,
       unsubscribe: null,
       showResponsesId: null,
-      showResolved: false // YENİ EKLENEN data
+      showResolved: false 
     };
   },
   computed: {
     filteredComplaints() {
       let filtered = this.complaints;
 
-      // YENİ FİLTRELEME MANTIĞI EKLENDİ
+     
       if (!this.showResolved) {
         filtered = filtered.filter(c => c.status !== 'çözüldü');
       }

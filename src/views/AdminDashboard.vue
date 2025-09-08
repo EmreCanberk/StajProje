@@ -25,7 +25,7 @@
 <script>
 import ComplaintList from '../components/ComplaintList.vue';
 import { auth } from '../firebaseConfig';
-import { onAuthStateChanged } from 'firebase/auth'; // Yeni import
+import { onAuthStateChanged } from 'firebase/auth'; 
 
 export default {
   name: 'AdminDashboard',
@@ -35,16 +35,16 @@ export default {
   data() {
     return {
       currentUserEmail: null,
-      loading: true, // Yükleme durumu eklendi
+      loading: true, 
     };
   },
   created() {
-    // onAuthStateChanged ile kullanıcı durumu dinleniyor
+   
     onAuthStateChanged(auth, (user) => {
       if (user) {
         this.currentUserEmail = user.email;
       }
-      this.loading = false; // Yükleme tamamlandı
+      this.loading = false; 
     });
   }
 };

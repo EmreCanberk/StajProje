@@ -40,7 +40,7 @@ export default {
       type: String,
       required: true
     },
-    isResolved: { // Yeni prop: Şikayetin çözülüp çözülmediği
+    isResolved: { 
       type: Boolean,
       default: false
     }

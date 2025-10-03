@@ -10,7 +10,7 @@
         <h2>Bize Ulaşın</h2>
         <div class="info-group">
           <i class="fas fa-map-marker-alt"></i>
-          <p><strong>Adres:</strong> Örnek Mahallesi, Deneme Caddesi No: 123, Kayseri</p>
+          <p><strong>Adres:</strong> X Mahallesi, Y Caddesi No: 123, Kayseri</p>
         </div>
         <div class="info-group">
           <i class="fas fa-phone"></i>
@@ -18,7 +18,7 @@
         </div>
         <div class="info-group">
           <i class="fas fa-envelope"></i>
-          <p><strong>E-posta:</strong> info@sirketadi.com.tr</p>
+          <p><strong>E-posta:</strong> info@sirket.com.tr</p>
         </div>
 
         <div class="social-links-grid">

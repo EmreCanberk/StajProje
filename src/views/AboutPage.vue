@@ -18,17 +18,17 @@
       <div class="team-grid">
         <div class="team-member">
           <img src="@/assets/team-member1.jpg" alt="Ekip Üyesi 1" class="member-photo" />
-          <h4>Ali Kaya</h4>
+          <h4>Ali A.</h4>
           <p>Kurucu Ortak & CEO</p>
         </div>
         <div class="team-member">
           <img src="@/assets/team-member2.jpg" alt="Ekip Üyesi 2" class="member-photo" />
-          <h4>Ayşe Demir</h4>
+          <h4>Abuzer A.</h4>
           <p>Operasyon Direktörü</p>
         </div>
         <div class="team-member">
           <img src="@/assets/team-member3.jpg" alt="Ekip Üyesi 3" class="member-photo" />
-          <h4>Mehmet Yılmaz</h4>
+          <h4>Veli V.</h4>
           <p>Teknoloji Müdürü</p>
         </div>
       </div>
@@ -65,10 +65,10 @@ export default {
   data() {
     return {
       testimonials: [
-        { rating: 5, text: "Şikayetim bir saat içinde çözüldü, inanılmaz hızlı ve etkili bir platform. Kesinlikle tavsiye ederim.", author: "Ayşe Yılmaz" },
-        { rating: 4.5, text: "Çok kolay bir arayüzü var. Şikayetimi gönderdim ve durumu anlık olarak takip edebiliyorum, harika!", author: "Mehmet Can" },
-        { rating: 4, text: "Müşteri hizmetleri çok ilgiliydi. Sorunumu çözmek için ellerinden geleni yaptılar.", author: "Zeynep Kara" },
-        { rating: 5, text: "Bugüne kadar kullandığım en iyi şikayet platformu. Hem pratik hem de güvenilir.", author: "Ahmet Demir" }
+        { rating: 5, text: "Şikayetim bir saat içinde çözüldü, inanılmaz hızlı ve etkili bir platform. Kesinlikle tavsiye ederim.", author: "Ayşe A." },
+        { rating: 4.5, text: "Çok kolay bir arayüzü var. Şikayetimi gönderdim ve durumu anlık olarak takip edebiliyorum, harika!", author: "Mehmet M." },
+        { rating: 4, text: "Müşteri hizmetleri çok ilgiliydi. Sorunumu çözmek için ellerinden geleni yaptılar.", author: "Zeynep Z." },
+        { rating: 5, text: "Bugüne kadar kullandığım en iyi şikayet platformu. Hem pratik hem de güvenilir.", author: "Ahmet D." }
       ],
       activeTestimonial: 0,
       intervalId: null
@@ -84,7 +84,7 @@ export default {
     startSlider() {
       this.intervalId = setInterval(() => {
         this.activeTestimonial = (this.activeTestimonial + 1) % this.testimonials.length;
-      }, 5000); // 5 saniyede bir değişir
+      }, 5000); 
     },
     stopSlider() {
       clearInterval(this.intervalId);
